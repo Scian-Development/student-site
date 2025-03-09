@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ru">
+ 
+<head>
+    <meta charset="utf-8">
+    <title>Поиск жилья - Циан</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+</head>
+
+<body>
+    <header id="header">
+            <div class="container">
+        
+                <nav class="header_nav">
+        
+                  <div class="logo_1">
+                    <h1 class="hidden">Циан - база недвижимости в Санкт-Петербурге и Ленинградской области</h1>
+                    <a href="https://www.cian.ru/" target="_blank"><img src="img/logo_1.svg" alt="logo_1"></a>
+                  </div>
+        
+                  <div>
+                    <ul class="nav">
+                      <li class="nav_not_checked"><a href="Landing_page.html">Домой</a></li>
+                      <li class="nav_checked"><a href="Catalog.html">Каталог</a></li>
+                      <li class="nav_not_checked"><a href="About_Us.html">О нас</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="geolocation">
+                    <button class="location_button">
+                        <img src="img/icon_location.png" alt="icon_location">
+                        <p>Санкт-Петербург</p>
+                    </button>
+                  </div>
+        
+                </nav>
+        
+            </div>
+    </header>
+
+
+    <main id="main">
+      <div class="container">
+
+        <div class="search_block">
+
+          <div class="search_filters">
+            <div>
+              <input type="checkbox" id="search_filter_button_1" class="search_filter_button">
+              <label for="search_filter_button_1">Снять</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="search_filter_button_2" class="search_filter_button">
+              <label for="search_filter_button_2">Купить</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="search_filter_button_3" class="search_filter_button">
+              <label for="search_filter_button_3">Квартиры</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="search_filter_button_4" class="search_filter_button">
+              <label for="search_filter_button_4">Дома</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="search_filter_button_5" class="search_filter_button">
+              <label for="search_filter_button_5">Участки</label>
+            </div>
+          </div>
+
+          <div class="search">
+            <div class="search_img"><img src="img/icon_search.png" alt="icon_search"></div>
+            <div class="search_input"><input type="text" placeholder="Адрес" class="search_input_form"></div>
+          </div>
+
+          <div class="button_to_search">
+            <button>Найти</button>
+          </div>
+
+        </div>
+
+
+        <div class="catalog_main">
+
+
+          <aside class="sidebar_filters">
+  
+            <div class="type">
+              <h4>ТИП</h4>
+                
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_1" class="custom_checkbox">
+                <label for="type_checkbox_1">Квартира в новостройке</label>
+              </div>
+  
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_2" class="custom_checkbox">
+                <label for="type_checkbox_2">Квартира во вторичке</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_3" class="custom_checkbox">
+                <label for="type_checkbox_3">Комната</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_4" class="custom_checkbox">
+                <label for="type_checkbox_4">Дом, дача</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_5" class="custom_checkbox">
+                <label for="type_checkbox_5">Часть дома</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_6" class="custom_checkbox">
+                <label for="type_checkbox_6">Таунхаус</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_7" class="custom_checkbox">
+                <label for="type_checkbox_7">Участок</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_8" class="custom_checkbox">
+                <label for="type_checkbox_8">Гараж</label>
+              </div>
+
+               
+  
+            </div>
+  
+            <div class="type">
+              <h4>ЦЕНА</h4>
+  
+              <div class="filter_range">
+
+                <div class="input_price_range">
+                  <input type="text" placeholder="от"><p>₽</p>
+                </div>
+  
+                <div class="input_price_range">
+                  <input type="text" placeholder="до"><p>₽</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="type">
+              <h4>КОМНАТНОСТЬ</h4>
+                
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_9" class="custom_checkbox">
+                <label for="type_checkbox_9">1-комнатная</label>
+              </div>
+  
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_10" class="custom_checkbox">
+                <label for="type_checkbox_10">2-комнатная</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_11" class="custom_checkbox">
+                <label for="type_checkbox_11">3-комнатная</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_12" class="custom_checkbox">
+                <label for="type_checkbox_12">4-комнатная</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_13" class="custom_checkbox">
+                <label for="type_checkbox_13">5-комнатная</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_14" class="custom_checkbox">
+                <label for="type_checkbox_14">6-комнатная</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_15" class="custom_checkbox">
+                <label for="type_checkbox_15">Студия</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_16" class="custom_checkbox">
+                <label for="type_checkbox_16">Свободная планировка</label>
+              </div>
+            
+            </div>
+
+            <div class="type">
+              <h4>ЭТАЖ</h4>
+              
+              <div class="filter_range">
+
+                <div class="input_range">
+                  <input type="text" placeholder="от">
+                </div>
+  
+                <div class="input_range">
+                  <input type="text" placeholder="до">
+                </div>
+
+              </div>
+                
+              <div class="checkbox">
+                  <input type="checkbox" id="type_checkbox_17" class="custom_checkbox">
+                  <label for="type_checkbox_17">Не первый</label>
+              </div>
+  
+              <div class="checkbox">
+                  <input type="checkbox" id="type_checkbox_18" class="custom_checkbox">
+                  <label for="type_checkbox_18">Не последний</label>
+              </div>
+  
+            </div>
+            
+            <div class="type">
+              <h4>ПЛОЩАДЬ, М<sup>2</sup></h4>
+                
+              <label>Общая:</label>
+              <div class="filter_range">
+
+                <div class="input_range">
+                  <input type="text" placeholder="от">
+                </div>
+  
+                <div class="input_range">
+                  <input type="text" placeholder="до">
+                </div>
+
+              </div>
+
+              <label>Жилая:</label>
+              <div class="filter_range">
+
+                <div class="input_range">
+                  <input type="text" placeholder="от">
+                </div>
+    
+                <div class="input_range">
+                  <input type="text" placeholder="до">
+                </div>
+
+              </div>
+
+              <label>Кухня:</label>
+              <div class="filter_range">
+
+                <div class="input_range">
+                  <input type="text" placeholder="от">
+                </div>
+    
+                <div class="input_range">
+                  <input type="text" placeholder="до">
+                </div>
+              </div>
+  
+            </div>
+
+            <div class="type">
+              <h4>ТИП СДЕЛКИ</h4>
+                
+              <div class="checkbox">
+                  <input type="checkbox" id="type_checkbox_19" class="custom_checkbox">
+                  <label for="type_checkbox_19">От собственника</label>
+              </div>
+  
+            </div>
+            
+            <div class="type">
+              <h4>ТИП ДОМА</h4>
+                
+              <div class="checkbox">
+                  <input type="checkbox" id="type_checkbox_20" class="custom_checkbox">
+                  <label for="type_checkbox_20">Кирпичный</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_21" class="custom_checkbox">
+                <label for="type_checkbox_21">Деревянный</label>
+              </div>
+               
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_22" class="custom_checkbox">
+                <label for="type_checkbox_22">Монолитный</label>
+              </div>
+               
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_23" class="custom_checkbox">
+                <label for="type_checkbox_23">Панельный</label>
+              </div>
+               
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_24" class="custom_checkbox">
+                <label for="type_checkbox_24">Блочный</label>
+              </div>
+               
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_25" class="custom_checkbox">
+                <label for="type_checkbox_25">Кирпично-монолитный</label>
+              </div>
+               
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_26" class="custom_checkbox">
+                <label for="type_checkbox_26">Сталинский</label>
+              </div>
+
+            </div>
+
+            <div class="type">
+              <h4>ПАРКОВКА</h4>
+                
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_27" class="custom_checkbox">
+                <label for="type_checkbox_27">Наземная</label>
+              </div>
+               
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_28" class="custom_checkbox">
+                <label for="type_checkbox_28">Многоуровневая</label>
+              </div>
+               
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_29" class="custom_checkbox">
+                <label for="type_checkbox_29">Подземная</label>
+              </div>
+               
+              <div class="checkbox">
+                <input type="checkbox" id="type_checkbox_30" class="custom_checkbox">
+                <label for="type_checkbox_30">На крыше</label>
+              </div>
+              
+            </div>
+
+            <div class="aside_result">
+              <div class="aside_button">
+                <p>Применить</p>
+              </div>
+            </div>
+  
+          </aside>
+  
+          <div class="searched_flats">
+  
+            <a href="Error_page.html" class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_1.png" alt="flat_1">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>2-комн. квартира, 70,5 м², 5/9 этаж</h3>
+                    <p>Санкт-Петербург, р-н Центральный, Лиговка-Ямская, м. Площадь Восстания</p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>28 278 206 ₽</b>
+                    <p>401 109 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>Продаётся Двухкомнатная квартира в клубном доме "МИРЪ" у Невского проспекта 
+                      (Миргородская улица, дом 1) у метро "пл. Восстания". Квартира расположена на 
+                      5 этаже, общая площадь 70.5 м2. Стоимость 28278206 рублей. Клубный дом 
+                      "МИРЪ" строится в Центральном районе Санкт-Петербурга на Миргородской...</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </a>
+          
+            <a href="Error_page.html" class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_2.png" alt="flat_2">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>3-комн. квартира, 108,3 м², 1/18 этаж</h3>
+                    <p>Санкт-Петербург, р-н Невский, Невская застава, м. Елизаровская, проспект Обуховской обороны, 70к4</p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>29 785 168 ₽</b>
+                    <p>275 025 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>Продается квартира 356, по адресу г. Санкт-Петербург, Невский район, пр. 
+                      Обуховской Обороны, д. 70, корп.4, стр. 1, корпус Этап 2 возле станции метро 
+                      "Елизаровская" в ЖК Эталон на Неве на 1 этаже, с площадью 108.3 м2...</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </a>
+    
+            <div class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_3.png" alt="flat_3">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>1-комн. квартира, 39,6 м², 10/18 этаж</h3>
+                    <p>Санкт-Петербург, р-н Василеостровский, Морской, м. Приморская, Невская Губа </p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>12 785 000 ₽</b>
+                    <p>322 854 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>Количество комнат: 1-комнатная Площадь: 39.6 м² Площадь кухни: 19.69 м² 
+                      Преимущества квартиры: + Бизнес-класс + Большая КУХНЯ! ЕВРО 1ККВ! + Вид 
+                      на ЗАЛИВ!!! GloraX Василеостровский - современный комплекс бизнес-класса 
+                      на берегу Финского залива, для тех, кто ценит рациональность, комфорт и...</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </div>
+    
+            <a href="Error_page.html" class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_4.png" alt="flat_4">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>2-комн. квартира, 72,84 м², 4/19 этаж</h3>
+                    <p>Санкт-Петербург, р-н Василеостровский, Морской, м. Приморская, Невская Губа</p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>20 055 000 ₽</b>
+                    <p>275 329 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>Данную квартиру можно купить в ипотеку по ставке от 4,5%! Подходит под 
+                      СЕМЕЙНУЮ и IT ипотеку!!! ОБ ОБЪЕКТЕ: Количество комнат: 2 Площадь: 72.84 м²
+                      Площадь кухни: 19.2 м² + Квартира расположена на комфортном 13 этаже + 
+                      ВИДОВАЯ КВАРТИРА НА ФИНСКИЙ ЗАЛИВ! + ПАНОРАМНОЕ ОСТЕКЛЕНИЕ...</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </a>
+    
+            <a href="Error_page.html" class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_5.png" alt="flat_5">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>2-комн. квартира, 48,7 м², 5/14 этаж</h3>
+                    <p>Санкт-Петербург, р-н Фрунзенский, Волковское, м. Волковская, Аэронавт ЖК</p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>16 181 291 ₽</b>
+                    <p>332 265 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>Продается Двухкомнатная квартира на 5 этаже за 16181291 рублей в доме 
+                      "Куинджи" у метро "Обводный канал". Квартира расположена на 5 этаже, общая 
+                      площадь 48.7 м2. Световые арт-объекты в холле и дворе, живописный ручей и 
+                      беседка для наблюдения за облаками. Дом высокого класса в 10 минутах от...</p>
+                  </div>
+    
+                </div>
+                
+              </div>
+            </a>
+
+            <a href="Error_page.html" class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_6.png" alt="flat_6">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>1-комн. квартира, 44 м², 10/11 этаж</h3>
+                    <p>Санкт-Петербург, р-н Фрунзенский, Волковское, м. Обводный канал, Витебский Парк ЖК, 3</p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>11 383 680 ₽</b>
+                    <p>258 720 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>Продаётся 1-комн. квартира площадью 44 кв.м на 10 этаже 11 этажного дома (Корпус 
+                      3, Секция 2) проекта ПИК "Витебский парк". Светлый просторный подъезд на уровне 
+                      земли, функциональная планировка, большие окна, отделка c отделкой. Жилой 
+                      квартал "Витебский парк" находится во Фрунзенском районе Санкт-Петербурга...</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </a>
+
+            <a href="Error_page.html" class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_7.png" alt="flat_7">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>2-комн. квартира, 51,3 м², 2/17 этаж</h3>
+                    <p>Санкт-Петербург, р-н Невский, Ивановский, м. Ломоносовская, Фарфоровская улица, 7к1</p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>16 950 135 ₽</b>
+                    <p>330 412 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>Продается уютная 2-комнатная квартира от застройщика в жилом комплексе "Стрижи 
+                      в Невском 2" в активно развивающимся Невском районе. До метро можно добраться
+                       пешком всего за 7 минут. Уникальная, функциональная европланировка, большая
+                        кухня-гостиная 17.04 м², вместительная прихожая 6.07 м²...</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </a>
+
+            <a href="Error_page.html" class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_8.png" alt="flat_8">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>1-комн. квартира, 41,35 м², 4/8 этаж</h3>
+                    <p>Санкт-Петербург, р-н Петроградский, Петровский, м. Спортивная, Ремесленная улица, 17</p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>16 990 000 ₽</b>
+                    <p>410 883 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>Отличная квартира с большой кухней-гостиной и 3х метровыми потолками Сдача в
+                       4 кв. 2023, ключи в начале 24го. -Переуступка -Панорамные окна На последнем фото
+                        указан сам корпус, стрелкой показан вид из окна О ЖК: NEVA RESIDENCE
+                         премиальный жилой комплекс на южном берегу Петровского острова, в двух...</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </a>
+
+            <a href="Error_page.html" class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_9.png" alt="flat_9">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>1-комн. квартира, 36,92 м², 2/9 этаж</h3>
+                    <p>Санкт-Петербург, р-н Адмиралтейский, Екатерингофский, м. Балтийская, улица Шкапина, 43-45</p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>12 439 999 ₽</b>
+                    <p>336 945 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>Продается 1-комнатная квартира на 2-м этаже в строящемся жилом комплексе 
+                      бизнес-класса GloraX Балтийская. Общая площадь лота составляет 36,92 кв. м, из 
+                      которых 10,32 кв. м отведено под жилую и 17,78 кв. м под кухонную зону. 
+                      Эргономичная планировка даёт возможность использовать пространство...</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </a>
+
+            <a href="Error_page.html" class="search_results">
+              <div class="search_results_block">
+                
+                <div class="search_results_block_img">
+                  <img src="img/flat_10.png" alt="flat_10">
+                </div>
+    
+                <div class="search_results_block_text">
+    
+                  <div class="search_results_block_text_1">
+                    <h3>1-комн. квартира, 77,37 м², 9/19 этаж</h3>
+                    <p>Санкт-Петербург, р-н Московский, Гагаринское, м. Московская, проспект Юрия Гагарина, 32к4В</p>
+                  </div>
+    
+                  <div class="search_results_block_text_2">
+                    <b>19 490 000 ₽</b>
+                    <p>251 906 ₽/м²</p>
+                  </div>
+    
+                  <div class="search_results_block_text_3">
+                    <p>ПРЕМИУМ КЛАСС в Московском районе. Просторная квартира ЕВРО-планировки 77
+                       кв.м. В прихожей есть место под шкаф купе. Направо от входа гостевой санузел 
+                       4кв.м. и кухня-гостиная 20кв. Из гостиной выход на лоджию с панорамным 
+                       остеклением. Окна смотрят на восточную сторону, по утрам вас будет встречать...</p>
+                  </div>
+    
+                </div>
+    
+              </div>
+            </a>          
+    
+            <div class="fake_nav">
+              <div class="fake_nav_buttons_back"><button>Назад</button></div>
+              <div class="fake_nav_buttons_first"><button>1</button></div>
+              <div class="fake_nav_buttons"><button>2</button></div>
+              <div class="fake_nav_buttons"><button>3</button></div>
+              <div class="fake_nav_buttons"><button>4</button></div>
+              <div class="fake_nav_buttons"><button>...</button></div>
+              <div class="fake_nav_buttons_next"><button >Дальше</button></div>
+            </div>
+
+          </div>
+  
+  
+        </div>
+
+        
+        
+                
+      </div>
+    </main>
+
+    
+    <footer id="footer">
+      <div class="container">
+        
+        <div class="footer_description">
+          <p>Циан — база проверенных объявлений о продаже и аренде жилой, загородной и коммерческой недвижимости. Онлайн-сервис №1 в России в категории «Недвижимость», 
+            по данным Similarweb на сентябрь 2023 г. Используя сервис, вы соглашаетесь с Пользовательским соглашением и 
+            Политикой конфиденциальности Циан. Оплачивая услуги, вы принимаете Лицензионное соглашение. ООО «Айриэлтор», email: support@cian.ru. 
+            На информационном ресурсе применяются Рекомендательные технологии.</p>
+        </div>
+
+        <div class="footer_pictures">
+            <div class="logo_2">
+              <img src="img/logo_2.svg" alt="logo_2">
+            </div>
+
+            <div class="app_stores">
+              <a href="https://play.google.com/store/apps/details?id=ru.cian.main" target="_blank"><img src="img/google_play.png" alt="Google Play"></a>
+              <a href="https://apps.apple.com/ru/app/циан-недвижимость-квартиры/id911804296?mt=8" target="_blank"><img src="img/app_store.png" alt="App Store"></a>
+              <a href="https://apps.rustore.ru/app/ru.cian.main" target="_blank"><img src="img/ru_store.png" alt="RuStore"></a>
+              <a href="https://appgallery.huawei.com/#/app/C101338815" target="_blank"><img src="img/app_galary.png" alt="AppGalary"></a>
+            </div>
+        </div>
+
+      </div>
+    </footer>
+
+</body>
+
+</html>
